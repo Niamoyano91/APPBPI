@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import Graphic from './components/Graphic';
 import Home from './components/Home';
 
 
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route path="/" exact>
          <Home />
+         <Graphic />
         </Route>
       </Switch>
     </div>
