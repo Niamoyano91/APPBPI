@@ -1,0 +1,19 @@
+.containerGraphic{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.titleGraphic{
+    align-self: center;
+    color: #2BD9B9;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 300;
+}
+
+.graphic{
+    align-self: center;
+    background-color: white;
+    border-radius: 5px;
+}

@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { LineChart, PieChart } from 'react-chartkick'
-import 'chart.js'
+import React, { useState, useEffect } from 'react';
+import { LineChart } from 'react-chartkick';
+import 'chart.js';
+import './Graphic.css';
+
 
 const Graphic = () => {
 
@@ -20,18 +22,19 @@ const Graphic = () => {
         setDataGraphic(valuesGraphic)
     };
 
-    console.log(dataGraphic)
     return (
-        <div>
-            <li></li>
+        <div className='containerGraphic'>
+            <h3 className='titleGraphic'>Gráfico valor Bitcoin entre el 9 de Agosto al 9 de Septiembre del 2020</h3>
+            <div className='graphic'>
             <LineChart  
-            colors={["#b00", "#666"]} 
+            colors={["#2BD9B9", "#2BD9B9"]} 
             id="users-chart" width="700px" height="500px" 
             min={10000} max={12500} 
-            xtitle="Fecha [09 de Agosto a 09 de Septiembre del 2020]
-            " 
+            xtitle="Fecha" 
             ytitle="Valor BPI"
+            download={true} 
             data={dataGraphic} />
+            </div>
         </div>
     )
 }

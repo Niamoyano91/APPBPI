@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import './Home.css';
 
 const Home = () => {
     // se guarda el objeto//
@@ -18,9 +19,9 @@ const Home = () => {
     };
 
     return (
-        <div>
-            <h1>HOME</h1>
-            <h2>{price.rate}</h2>
+        <div className='containerHome'>
+            <h1 className='priceHome'>{price.rate}</h1>
+            <h2 className='textHome'>Valor actual Bitcoin</h2>
         </div>
     )
 }
