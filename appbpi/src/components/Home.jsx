@@ -20,7 +20,7 @@ const Home = () => {
 
     return (
         <div className='containerHome'>
-            <h1 className='priceHome'>{price.rate}</h1>
+            <h1 className='priceHome'>${price.rate} USD</h1>
             <h2 className='textHome'>Valor actual Bitcoin</h2>
         </div>
     )

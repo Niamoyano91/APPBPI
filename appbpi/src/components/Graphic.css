@@ -1,8 +1,8 @@
 .containerGraphic{
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
 }
-
 
 .titleGraphic{
     align-self: center;
@@ -16,4 +16,11 @@
     align-self: center;
     background-color: white;
     border-radius: 5px;
+}
+
+.linkGarphic{
+    color: #03A6A6;
+  
+    
+
 }

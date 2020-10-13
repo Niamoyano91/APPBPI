@@ -9,7 +9,7 @@ const Graphic = () => {
     // se guarda el objeto//
     const [dataGraphic, setDataGraphic] = useState()
 
-    //se ejecuta la funcion cada vez que cambia un valor del objeto//
+    //se ejecuta la funcion una vez//
     useEffect(() => {
         getDataGraphic()
     },[]);
@@ -31,10 +31,12 @@ const Graphic = () => {
             id="users-chart" width="700px" height="500px" 
             min={10000} max={12500} 
             xtitle="Fecha" 
-            ytitle="Valor BPI"
+            ytitle="Valor BPI en dolares"
             download={true} 
             data={dataGraphic} />
+             <a className='linkGarphic' href='https://www.coindesk.com/price/bitcoin'>Fuente:https://www.coindesk.com/price/bitcoin</a>
             </div>
+           
         </div>
     )
 }
