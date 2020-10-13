@@ -13,4 +13,4 @@
 
 ##Deploy
 
-Conoce el proyecto haciendo click [aquí](https://pricebpi.netlify.app/)
+Conoce el proyecto [aquí](https://pricebpi.netlify.app/)
